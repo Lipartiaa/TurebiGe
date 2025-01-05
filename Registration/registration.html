@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>რეგისტრაცია</h1>
+</header>
+
+<form id="registration-form" action="#" method="POST">
+    <div class="form-group">
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ. ფოსტა" required>
+        <small id="email-error" class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required>
+        <small id="password-strength" class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="confirm-password">დაადასტურეთ პაროლი:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="დაადასტურეთ პაროლი" required>
+    </div>
+
+    <div class="form-group">
+        <label for="date">რეგისტრაციის თარიღი:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+        <label for="full-name">მომხარებლის სახელი:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="შეიყვანეთ სახელი" required>
+    </div>
+
+    <div class="form-group">
+        <label for="country">ქვეყანა:</label>
+        <input type="text" id="country" name="country" placeholder="შეიყვანეთ ქვეყანა" required>
+    </div>
+
+    <div class="form-group">
+        <label for="city">ქალაქი:</label>
+        <input type="text" id="city" name="city" placeholder="შეიყვანეთ ქალაქი" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">მობილურის ნომერი:</label>
+        <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ მობილურის ნომერი" required>
+    </div>
+
+    <button type="submit">რეგისტრაცია</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
