@@ -229,3 +229,21 @@ img.displaySlide{
     from {opacity: .5}
     to {opacity: 1}
 }
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 20px;
+    display: flex;
+    margin-bottom: 40%;
+}
+
+
