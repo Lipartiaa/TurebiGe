@@ -8,7 +8,9 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    padding-top: 30px;
 }
+
 
 header {
     text-align: center;
@@ -30,11 +32,13 @@ form {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -76,4 +80,22 @@ button:hover {
 small {
     font-size: 14px;
     color: red;
+}
+
+/* Divider between forms */
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
