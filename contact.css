@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* This aligns the content at the top */
+    min-height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff; /* White background for navigation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* Some padding for nav items */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center nav items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px; /* Add margin to push the contact form down */
+}
+
+h1 {
+    text-align: center;
+    color: #2d7d3a; /* Green color */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #2d7d3a; /* Green color */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #2d7d3a; /* Green border */
+    border-radius: 4px;
+    background-color: #f4f4f4; /* Light gray background for inputs */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50; /* Darker green on focus */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Slightly darker green when hovering */
+}

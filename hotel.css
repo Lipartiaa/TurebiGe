@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+
+.hotel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.hotel {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hotel:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.hotel h2 {
+    margin: 0 0 10px;
+    color: #34495e;
+    font-size: 1.5em;
+}
+
+
+.hotel p {
+    margin: 10px 0;
+}
+
+
+.hotel ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.hotel ul li {
+    padding: 5px 0;
+    color: #555;
+}
+
+.hotel ul li:before {
+    content: "•";
+    color: #2980b9;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+}
+nav ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}

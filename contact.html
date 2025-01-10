@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="maininformation.html">ძირითადი ინფორმაცია</a></li>
+        <li><a href="transport.html">ტრანსპორტი</a></li>
+        <li><a href="hotel.html">სასტუმროები</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>კონტაქტი</h1>
+    <form action="submit_form.php" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">სახელი</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">ელ. ფოსტა</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">მესიჯი</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">გაგზავნა</button>
+    </form>
+</div>
+</body>
+</html>
