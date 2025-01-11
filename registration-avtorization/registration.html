@@ -3,40 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>რეგისტრაცია და ავტორიზაცია</title>
+    <title>რეგისტრაცია</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!-- ავტორიზაციის ფორმა -->
-<header>
-    <h1>ავტორიზაცია</h1>
-</header>
-
-<form id="authForm" action="#" method="POST">
-    <div class="form-group">
-        <label for="username">სახელი ან ელფოსტა:</label>
-        <input type="text" id="username" name="username" placeholder="შეიყვანეთ სახელი ან ელფოსტა" required>
-    </div>
-
-    <div class="form-group">
-        <label for="password">პაროლი:</label>
-        <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required>
-    </div>
-
-    <button type="submit">შესვლა</button>
-    <div class="error-message" id="errorMessage" style="display: none;">გთხოვთ შეავსოთ ყველა ველი სწორად.</div>
-</form>
-
-<hr>
-
-<!-- რეგისტრაციის ფორმა -->
 <header>
     <h1>რეგისტრაცია</h1>
 </header>
-
-<form id="registration-form" action="#" method="POST">
+<form id="registration-form">
     <div class="form-group">
         <label for="email">ელ. ფოსტა:</label>
         <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ. ფოსტა" required>
@@ -55,7 +29,7 @@
     </div>
 
     <div class="form-group">
-        <label for="date">დაბადების თარიღი:</label>
+        <label for="date">რეგისტრაციის თარიღი:</label>
         <input type="date" id="date" name="date" required>
     </div>
 
@@ -76,12 +50,12 @@
 
     <div class="form-group">
         <label for="phone">მობილურის ნომერი:</label>
-        <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ მობილურის ნომერი" required>
+        <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ მობილურის ნომერი" required pattern="[0-9]{9,}">
     </div>
 
     <button type="submit">რეგისტრაცია</button>
 </form>
 
-<script src="script.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
